@@ -67,6 +67,9 @@ p {
     main {
         grid-template-columns: repeat(2, 1fr);
     }
+    .sushi {
+        grid-column: 1 / span 2;
+    }
 }
 
 @media screen and (min-width: 1201px) {
