@@ -4,6 +4,12 @@ body, header, div, main, h2, h1, p {
     padding: 0;
 }
 
+:root {
+    --chicken-color: #b23b3b;
+    --beef-color: rgb(19, 69, 144);
+    --sushi-color: rgb(161, 154, 23);
+}
+
 h1 {
     text-align: center;
     margin: 3rem 0 0;
@@ -17,16 +23,17 @@ main {
     grid-auto-rows: 1fr;
 }
 
-.grid-item {
-    border: solid;
+div {
+    border: solid #00008b;
+    background-color: #ededed;
 }
 
 h2 {
     float: right;
     padding: 0.5rem 1rem;
     border: solid;
-    border-top: 0;
-    border-right: 0;
+    background-color: #00008b;
+    color: #ededed;
 }
 
 p {
@@ -34,9 +41,25 @@ p {
     padding: 1rem;
 }
 
+.chicken {
+    border-color: var(--chicken-color);
+}
+
+.chicken h2 {
+    background-color: var(--chicken-color);
+}
+
+.sushi {
+    border-color: var(--sushi-color);
+}
+
+.sushi h2 {
+    background-color: var(--sushi-color);
+}
+
 @media screen and (max-width: 600px) {
     main {
-        grid-template-columns: repeat();
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
