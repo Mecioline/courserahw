@@ -42,11 +42,11 @@ p {
 }
 
 .chicken {
-    border-color: var(--chicken-color);
+    border-color: #b23b3b;
 }
 
 .chicken h2 {
-    background-color: var(--chicken-color);
+    background-color: #b23b3b;
 }
 
 .sushi {
